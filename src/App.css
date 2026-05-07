@@ -1,0 +1,170 @@
+/* ── Header ─────────────────────────────────────────────── */
+#app-header {
+  padding: 32px 32px 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+#logo-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+#logo-row h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.subtitle {
+  color: var(--text);
+  font-size: 15px;
+}
+
+/* ── Navigation ──────────────────────────────────────────── */
+#lesson-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border);
+  justify-content: center;
+}
+
+.nav-btn {
+  font-size: 14px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+
+  &:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  &.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+  }
+}
+
+/* ── Main lesson area ────────────────────────────────────── */
+#lesson-main {
+  flex: 1;
+  padding: 32px 24px;
+  max-width: 780px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ── Lesson content ──────────────────────────────────────── */
+.lesson h2 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.lesson .description {
+  color: var(--text);
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.lesson .example {
+  margin-bottom: 24px;
+}
+
+.lesson .example h3 {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+}
+
+/* ── Card ─────────────────────────────────────────────────── */
+.card {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.card h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+
+/* ── Code block ──────────────────────────────────────────── */
+pre.code {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  font-family: var(--mono);
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: left;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+/* ── Buttons ─────────────────────────────────────────────── */
+button {
+  font-size: 14px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--accent-bg);
+  color: var(--accent);
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+
+  &:hover {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+  }
+}
+
+/* ── Inputs ──────────────────────────────────────────────── */
+input[type='text'],
+input[type='checkbox'] {
+  accent-color: var(--accent);
+}
+
+input[type='text'] {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-h);
+  font-size: 14px;
+  font-family: var(--sans);
+}
+
+/* ── Footer ──────────────────────────────────────────────── */
+#app-footer {
+  padding: 16px;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+  text-align: center;
+
+  a {
+    color: var(--accent);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
