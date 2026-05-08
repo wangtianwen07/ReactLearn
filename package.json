@@ -1,0 +1,38 @@
+{
+  "name": "reactlearn-workspace",
+  "private": true,
+  "packageManager": "pnpm@10.11.1",
+  "scripts": {
+    "dev": "corepack pnpm --filter @react-learn/shell dev",
+    "dev:shell": "corepack pnpm --filter @react-learn/shell dev",
+    "dev:iam": "corepack pnpm --filter @react-learn/iam dev",
+    "dev:ticket": "corepack pnpm --filter @react-learn/ticket dev",
+    "build": "corepack pnpm -r build",
+    "lint": "corepack pnpm exec eslint . --max-warnings 0",
+    "format": "corepack pnpm exec prettier . --write",
+    "format:check": "corepack pnpm exec prettier . --check",
+    "lint-staged": "corepack pnpm exec lint-staged",
+    "prepare": "corepack pnpm exec husky",
+    "typecheck": "corepack pnpm -r typecheck",
+    "test": "corepack pnpm -r --if-present test",
+    "ci": "corepack pnpm lint && corepack pnpm typecheck && corepack pnpm test && corepack pnpm build"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@eslint/js": "^9.26.0",
+    "@types/node": "^24.0.0",
+    "eslint": "^9.26.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.1.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.2",
+    "prettier": "^3.5.3",
+    "tsup": "^8.5.0",
+    "typescript-eslint": "^8.31.1",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.4"
+  }
+}
