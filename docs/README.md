@@ -68,6 +68,7 @@
 
 辅助资料：
 
+- [`feishu-mapping.md`](./feishu-mapping.md)：Git ↔ 飞书文档对应关系索引（新增/重命名文档时同步更新）
 - [`90-checklists.md`](./90-checklists.md)：阶段验收清单（可当 PR 模板）
 - [`91-mindmap.md`](./91-mindmap.md)：Mermaid 思维导图（路线全景）
 - [`92-tech-stack-decisions.md`](./92-tech-stack-decisions.md)：技术选型（ADR 风格：选择/理由/替代/风险）
